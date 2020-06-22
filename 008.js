@@ -4,7 +4,7 @@ function foreverAdd(arr){
     for(let i = 0; i<arr.length; i++){
         if(arr[i] !== '='){
             result += arr[i];
-        }else{
+        }else if(arr[i] === '=') {
             return result;
         }
     }
